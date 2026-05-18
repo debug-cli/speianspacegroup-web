@@ -3,6 +3,7 @@
 The official website for the Speian Space Group (SSG), a fictional space agency from a Kerbal Space Program playthrough.
 
 Live site: [speian-space-group.vercel.app](https://speian-space-group.vercel.app)
+Link shortened site: [https://bit.ly/speianspacegroup](https://bit.ly/speianspacegroup)
 
 ---
 
