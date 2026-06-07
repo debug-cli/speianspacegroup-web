@@ -1499,6 +1499,57 @@
   .contact-info-box p:last-child { margin-bottom: 0; }
   .contact-info-box p strong { color: var(--off-white); font-weight: 400; }
 
+
+  /* UPTIME TIMER */
+  .uptime-widget {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 500;
+    background: rgba(13,11,9,0.96);
+    border: 1px solid rgba(201,168,76,0.4);
+    padding: 1rem 1.6rem;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 40px rgba(0,0,0,0.6);
+    min-width: 220px;
+  }
+
+  .uptime-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.55rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold-muted);
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .uptime-label::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4aaa4a;
+    display: inline-block;
+    animation: pulse 2s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+
+  .uptime-display {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--warm-white);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+
+  .uptime-display span {
+    color: var(--gold);
+  }
   /* FOOTER */
   footer {
     background: var(--deep-crimson);
@@ -2077,11 +2128,109 @@
         </div>
         <div class="program-status" style="margin-top:1.5rem;color:#4aaa4a;">
           <div class="status-dot" style="background:#4aaa4a;"></div>
-          Consolidated — IGNITION &amp; PHOENIX Absorbed · Deployment Phase
+Deployment Suspended — FSDP Safety Review Pending
         </div>
       </div>
     </div>
 
+
+
+    <!-- FSDP WIDE CARD -->
+    <div class="program-card-wide fade-in" style="border-color:rgba(201,168,76,0.35);">
+      <div class="program-card-wide-content">
+        <div>
+          <div class="program-classified" style="color:#6aaa6a;background:rgba(20,80,20,0.15);border-color:rgba(40,120,40,0.5);">Public Programme — Active</div>
+          <div class="program-code" style="font-size:2rem;">FSDP</div>
+          <div class="program-name">Flight Safety &amp; Design Programme</div>
+          <div class="iog-threat-tags">
+            <span class="iog-tag" style="color:var(--gold-muted);border-color:rgba(201,168,76,0.3);background:rgba(201,168,76,0.06);">Safety Overhaul</span>
+            <span class="iog-tag" style="color:var(--gold-muted);border-color:rgba(201,168,76,0.3);background:rgba(201,168,76,0.06);">Major Upscaling</span>
+            <span class="iog-tag" style="color:var(--gold-muted);border-color:rgba(201,168,76,0.3);background:rgba(201,168,76,0.06);">Recruitment Drive</span>
+            <span class="iog-tag" style="color:var(--gold-muted);border-color:rgba(201,168,76,0.3);background:rgba(201,168,76,0.06);">Logistics Reform</span>
+            <span class="iog-tag" style="color:#c04040;border-color:rgba(140,20,20,0.5);background:rgba(107,15,26,0.15);">VAB Incident Response</span>
+          </div>
+          <p class="program-desc">
+            The Flight Safety and Design Programme is SSG's formal organisational response to the VAB chemical explosion and the Bastion test vehicle loss. FSDP is not a research programme — it is a structural reform. It encompasses a full audit and overhaul of SSG's vehicle assembly, fuelling, and pre-launch procedures, alongside a major upscaling of the engineering and safety workforce.
+          </p>
+          <p class="program-desc">
+            FSDP's three pillars are: <strong style="color:var(--off-white);font-weight:400;">Safety</strong> — complete review and rewrite of hazardous operations protocols across all SSG facilities, with independent oversight; <strong style="color:var(--off-white);font-weight:400;">Design</strong> — structural review of all active vehicle programmes to identify and correct failure-mode vulnerabilities; and <strong style="color:var(--off-white);font-weight:400;">Logistics</strong> — reform of propellant handling, component storage, and launch-pad workflow to eliminate the procedural gaps identified in the VAB incident investigation.
+          </p>
+          <p class="program-desc">
+            A major recruitment drive is underway to bring SSG's safety engineering and quality assurance headcount to levels consistent with the expanded programme portfolio. FSDP will not be dissolved until all audit findings are resolved and independent certification is achieved.
+          </p>
+        </div>
+        <div style="display:flex;gap:2rem;align-items:center;margin-top:1.5rem;flex-wrap:wrap;">
+          <div class="program-status" style="color:#e8a030;">
+            <div class="status-dot" style="background:#e8a030;"></div>
+            Active — Safety Audit Ongoing
+          </div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);">
+            Recruitment Open — All Divisions
+          </div>
+        </div>
+      </div>
+      <div class="program-card-wide-image" style="background:#0a0806;">
+        <!-- SVG illustration: rocket schematic / safety diagram -->
+        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;opacity:0.85;">
+          <rect width="480" height="360" fill="#0a0806"/>
+          <!-- Grid -->
+          <g stroke="rgba(201,168,76,0.07)" stroke-width="0.5">
+            <line x1="0" y1="30" x2="480" y2="30"/><line x1="0" y1="60" x2="480" y2="60"/>
+            <line x1="0" y1="90" x2="480" y2="90"/><line x1="0" y1="120" x2="480" y2="120"/>
+            <line x1="0" y1="150" x2="480" y2="150"/><line x1="0" y1="180" x2="480" y2="180"/>
+            <line x1="0" y1="210" x2="480" y2="210"/><line x1="0" y1="240" x2="480" y2="240"/>
+            <line x1="0" y1="270" x2="480" y2="270"/><line x1="0" y1="300" x2="480" y2="300"/>
+            <line x1="0" y1="330" x2="480" y2="330"/>
+            <line x1="40" y1="0" x2="40" y2="360"/><line x1="80" y1="0" x2="80" y2="360"/>
+            <line x1="120" y1="0" x2="120" y2="360"/><line x1="160" y1="0" x2="160" y2="360"/>
+            <line x1="200" y1="0" x2="200" y2="360"/><line x1="240" y1="0" x2="240" y2="360"/>
+            <line x1="280" y1="0" x2="280" y2="360"/><line x1="320" y1="0" x2="320" y2="360"/>
+            <line x1="360" y1="0" x2="360" y2="360"/><line x1="400" y1="0" x2="400" y2="360"/>
+            <line x1="440" y1="0" x2="440" y2="360"/>
+          </g>
+          <!-- Rocket body schematic -->
+          <g transform="translate(100,20)">
+            <!-- Stage 2 upper -->
+            <rect x="120" y="30" width="40" height="100" fill="none" stroke="rgba(201,168,76,0.5)" stroke-width="1.5"/>
+            <!-- Nose cone -->
+            <polygon points="120,30 160,30 140,5" fill="none" stroke="rgba(201,168,76,0.5)" stroke-width="1.5"/>
+            <!-- Stage separator line -->
+            <line x1="115" y1="130" x2="165" y2="130" stroke="rgba(201,168,76,0.7)" stroke-width="1" stroke-dasharray="4,3"/>
+            <!-- Stage 1 lower -->
+            <rect x="112" y="130" width="56" height="120" fill="none" stroke="rgba(201,168,76,0.45)" stroke-width="1.5"/>
+            <!-- Engine bells -->
+            <ellipse cx="128" cy="255" rx="10" ry="6" fill="none" stroke="rgba(201,168,76,0.5)" stroke-width="1"/>
+            <ellipse cx="152" cy="255" rx="10" ry="6" fill="none" stroke="rgba(201,168,76,0.5)" stroke-width="1"/>
+            <!-- Centre line -->
+            <line x1="140" y1="5" x2="140" y2="260" stroke="rgba(201,168,76,0.15)" stroke-width="0.5" stroke-dasharray="6,4"/>
+            <!-- Dimension lines -->
+            <line x1="175" y1="30" x2="175" y2="130" stroke="rgba(201,168,76,0.3)" stroke-width="0.8"/>
+            <line x1="170" y1="30" x2="180" y2="30" stroke="rgba(201,168,76,0.3)" stroke-width="0.8"/>
+            <line x1="170" y1="130" x2="180" y2="130" stroke="rgba(201,168,76,0.3)" stroke-width="0.8"/>
+            <text x="183" y="82" fill="rgba(201,168,76,0.5)" font-size="7" font-family="Barlow Condensed, sans-serif" letter-spacing="1">S2</text>
+            <line x1="180" y1="130" x2="180" y2="255" stroke="rgba(201,168,76,0.3)" stroke-width="0.8"/>
+            <line x1="175" y1="130" x2="185" y2="130" stroke="rgba(201,168,76,0.3)" stroke-width="0.8"/>
+            <line x1="175" y1="255" x2="185" y2="255" stroke="rgba(201,168,76,0.3)" stroke-width="0.8"/>
+            <text x="188" y="196" fill="rgba(201,168,76,0.5)" font-size="7" font-family="Barlow Condensed, sans-serif" letter-spacing="1">S1</text>
+          </g>
+          <!-- FSDP labels -->
+          <text x="24" y="320" fill="rgba(201,168,76,0.35)" font-family="Barlow Condensed, sans-serif" font-size="8" letter-spacing="3">FSDP — VEHICLE SAFETY REVIEW</text>
+          <text x="24" y="340" fill="rgba(201,168,76,0.2)" font-family="Barlow Condensed, sans-serif" font-size="7" letter-spacing="2">SPEIAN SPACE GROUP — ENGINEERING AUDIT</text>
+          <!-- Warning markers -->
+          <g transform="translate(340,80)">
+            <polygon points="16,0 32,28 0,28" fill="none" stroke="rgba(200,80,40,0.6)" stroke-width="1.5"/>
+            <text x="16" y="21" text-anchor="middle" fill="rgba(200,80,40,0.8)" font-size="12" font-family="Barlow Condensed, sans-serif" font-weight="700">!</text>
+          </g>
+          <text x="320" y="125" fill="rgba(200,80,40,0.5)" font-family="Barlow Condensed, sans-serif" font-size="7" letter-spacing="2">INCIDENT ZONE — VAB</text>
+          <g transform="translate(340,145)">
+            <polygon points="16,0 32,28 0,28" fill="none" stroke="rgba(200,80,40,0.4)" stroke-width="1"/>
+            <text x="16" y="21" text-anchor="middle" fill="rgba(200,80,40,0.6)" font-size="11" font-family="Barlow Condensed, sans-serif" font-weight="700">!</text>
+          </g>
+          <text x="320" y="190" fill="rgba(200,80,40,0.4)" font-family="Barlow Condensed, sans-serif" font-size="7" letter-spacing="2">BASTION TEST LOSS</text>
+        </svg>
+        <div class="img-caption">FSDP — Vehicle Safety Review Schematic</div>
+      </div>
+    </div>
 
     <!-- DRAGONFLY NEWS WIDE CARD -->
     <div class="program-card-wide fade-in" style="border-color:rgba(201,168,76,0.35);">
@@ -2404,6 +2553,48 @@
   <div class="news-grid">
     <!-- MAIN COLUMN -->
     <div class="news-main">
+
+
+      <!-- VAB EXPLOSION NEWS -->
+      <div class="news-card news-card-plain fade-in" style="border-color:rgba(200,80,40,0.5);">
+        <div class="news-card-body">
+          <span class="news-tag" style="color:rgba(220,80,40,0.9);background:rgba(120,30,10,0.15);border:1px solid rgba(180,50,20,0.5);">Incident Report — Active Investigation</span>
+          <div class="news-date">SSG Safety Division — Official Statement</div>
+          <div class="news-headline">VAB Chemical Explosion &amp; <em style="color:rgba(220,100,60,0.9);">Bastion Test Vehicle Loss</em> — Investigation Underway</div>
+          <p class="news-body">
+            SSG confirms that a <strong>chemical explosion occurred in the Vehicle Assembly Building</strong> during propellant loading operations for a Bastion programme test vehicle. The incident resulted in significant structural damage to the affected VAB bay. Separately, the Bastion test rocket undergoing ground-based engine testing was destroyed in a subsequent ignition failure. There are no confirmed fatalities at this time; a full casualty and damage assessment is ongoing.
+          </p>
+          <p class="news-body">
+            Preliminary findings indicate the initial explosion originated from an improperly sealed propellant transfer junction in the LOX handling assembly. The resulting pressure wave and chemical fire propagated to the adjacent test stand, triggering the Bastion engine failure. SSG's Safety Division has assumed full operational control of the VAB facility pending investigation. All non-essential launch operations are suspended.
+          </p>
+          <p class="news-body">
+            SSG Director of Safety issued the following statement: <em style="color:rgba(240,236,227,0.6);">"These failures are serious and we will not minimise them. The investigation will be thorough, transparent, and its findings will drive immediate procedural reform. The FSDP programme has been activated in direct response."</em>
+          </p>
+          <p class="news-body" style="color:rgba(220,80,40,0.7);font-size:0.8rem;">
+            Independent safety investigators have been engaged. Full incident report to follow. All affected programme timelines are under review.
+          </p>
+          <span class="news-read-more">Full Incident Statement</span>
+        </div>
+      </div>
+
+      <!-- BASTION DELAY -->
+      <div class="news-card news-card-plain fade-in" style="border-color:rgba(201,168,76,0.3);">
+        <div class="news-card-body">
+          <span class="news-tag" style="color:#e8a030;background:rgba(180,120,20,0.12);border:1px solid rgba(180,120,20,0.4);">Programme Update — Delay Announced</span>
+          <div class="news-date">SSG Programme Management Directorate</div>
+          <div class="news-headline">BASTION Programme <em style="color:#e8a030;">Formally Delayed</em> — FSDP Safety Review Required Before Resumption</div>
+          <p class="news-body">
+            Following the VAB explosion and the loss of the Bastion test vehicle, SSG's Programme Management Directorate has formally announced a delay to the BASTION Munar habitation programme. <strong>All Bastion launch activities are suspended</strong> pending completion of the FSDP safety audit and independent certification of revised propellant handling and vehicle assembly procedures.
+          </p>
+          <p class="news-body">
+            The delay is of indeterminate length at this time. SSG will not resume Bastion programme activities — including ground testing, assembly operations, or launch scheduling — until the FSDP investigation is closed and all corrective actions are verified. Programme milestones will be restated following safety clearance.
+          </p>
+          <p class="news-body">
+            SSG acknowledges the impact on the broader Munar programme timeline and reaffirms its commitment to long-term Munar presence. The delay is not a programme cancellation. <em style="color:rgba(240,236,227,0.6);">"We build for decades. We do not launch before we are ready."</em>
+          </p>
+          <span class="news-read-more">Programme Status Page</span>
+        </div>
+      </div>
 
       <!-- FEATURED: Revolution Anniversary -->
       <div class="news-card news-card-featured fade-in">
@@ -2991,6 +3182,45 @@
     el.style.transitionDelay = `${i * 0.1}s`;
   });
 
+
+  // WEBSITE UPDATED SINCE TIMER
+  // localStorage persists start timestamp across page loads so it always begins at 0.
+  // All 6 units always shown — no conditional visibility.
+  window.addEventListener('DOMContentLoaded', function() {
+    var STORE_KEY = 'ssg_site_start';
+    var stored = localStorage.getItem(STORE_KEY);
+    if (!stored) {
+      stored = Date.now().toString();
+      localStorage.setItem(STORE_KEY, stored);
+    }
+    var start = parseInt(stored, 10);
+
+    function pad(n) { return String(n).padStart(2, '0'); }
+
+    function updateUptime() {
+      var el = document.getElementById('uptime-display');
+      if (!el) return;
+      var elapsed = Math.floor((Date.now() - start) / 1000);
+      if (elapsed < 0) elapsed = 0;
+      var years  = Math.floor(elapsed / 31536000);
+      var months = Math.floor((elapsed % 31536000) / 2592000);
+      var days   = Math.floor((elapsed % 2592000) / 86400);
+      var hours  = Math.floor((elapsed % 86400) / 3600);
+      var mins   = Math.floor((elapsed % 3600) / 60);
+      var secs   = elapsed % 60;
+      el.innerHTML =
+        '<span>' + years  + '</span>y ' +
+        '<span>' + months + '</span>mo ' +
+        '<span>' + days   + '</span>d ' +
+        pad(hours) + 'h ' +
+        pad(mins)  + 'm ' +
+        pad(secs)  + 's';
+    }
+
+    updateUptime();
+    setInterval(updateUptime, 1000);
+  });
+
   // Nav transparency
   window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
@@ -3091,6 +3321,13 @@
     </div>
 
   </div>
+</div>
+
+
+<!-- UPTIME TIMER WIDGET -->
+<div class="uptime-widget" id="uptime-widget">
+  <div class="uptime-label">Website Updated Since</div>
+  <div class="uptime-display" id="uptime-display">0y 0mo 0d 00h 00m 00s</div>
 </div>
 
 </body>
